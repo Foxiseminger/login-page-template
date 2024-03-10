@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <!-- Link to the CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Your HTML content here -->
+  <div class="container">
+    <form id="feedback-form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required autocomplete="name">
+        <span class="error" id="name-error"></span>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@example.com" required autocomplete="email">
+        <span class="error" id="email-error"></span>
+      </div>
+      <div class="form-group">
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" placeholder="Enter your feedback" autocomplete="feedback"></textarea>
+        <span class="error" id="feedback-error"></span>
+      </div>
+      <div class="form-group">
+        <button type="submit" id="submit">Submit</button>
+        <button type="button" id="show-poem">Show Poem</button>
+        <button type="button" id="quote-generator">Quote Generator</button> <!-- Added Quote Generator button -->
+        <span class="success" id="success-message"></span>
+      </div>
+    </form>
+  </div>
+
+  <!-- Link to the JS file in the body (optional) -->
+  <script src="script.js"></script>
+</body>
+</html>
